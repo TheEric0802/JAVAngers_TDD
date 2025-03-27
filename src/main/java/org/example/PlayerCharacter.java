@@ -12,18 +12,13 @@ public class PlayerCharacter {
 
     public int[] move(String input) {
 
-        switch (input) {
-            case "W":
-                return new int[]{0, 1};
-            case "S":
-                return new int[]{0, -1};
-            case "D":
-                return new int[]{1, 0};
-            case "A":
-                return new int[]{-1, 0};
-            default:
-                return new int[0];
-        }
+        return switch (input) {
+            case "W" -> new int[]{0, 1};
+            case "S" -> new int[]{0, -1};
+            case "D" -> new int[]{1, 0};
+            case "A" -> new int[]{-1, 0};
+            default -> new int[2];
+        };
 
     }
 }
