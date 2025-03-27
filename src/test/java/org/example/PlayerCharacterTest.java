@@ -16,4 +16,9 @@ class PlayerCharacterTest {
         assertEquals(0, new PlayerCharacter().getY());
     }
 
+    @Test
+    void move_shouldReturn0_1_WhenCalledWithW() {
+        assertArrayEquals(new int[]{0, 1}, new PlayerCharacter().move("w"));
+    }
+
 }

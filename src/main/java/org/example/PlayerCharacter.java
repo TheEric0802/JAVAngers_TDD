@@ -9,4 +9,8 @@ public class PlayerCharacter {
     public int getY() {
         return 0;
     }
+
+    public int[] move(String input) {
+        return new int[]{0, 1};
+    }
 }
