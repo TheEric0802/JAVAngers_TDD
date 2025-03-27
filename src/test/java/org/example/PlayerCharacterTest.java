@@ -11,4 +11,9 @@ class PlayerCharacterTest {
         assertEquals(0, new PlayerCharacter().getX());
     }
 
+    @Test
+    void getY_shouldReturn0() {
+        assertEquals(0, new PlayerCharacter().getY());
+    }
+
 }
