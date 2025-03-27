@@ -31,4 +31,9 @@ class PlayerCharacterTest {
         assertArrayEquals(new int[]{1, 0}, new PlayerCharacter().move("D"));
     }
 
+    @Test
+    void move_shouldReturnNegative1_0_WhenCalledWithA() {
+        assertArrayEquals(new int[]{-1, 0}, new PlayerCharacter().move("A"));
+    }
+
 }
